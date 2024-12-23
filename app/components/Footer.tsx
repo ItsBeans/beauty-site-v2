@@ -18,6 +18,9 @@ export default function Footer() {
             <p className="text-sm text-gray-500">
               376 Oldfield Lane North, Greenford, UB6 8PU
             </p>
+            <p className="text-sm text-gray-500">
+            07725846069
+            </p>
           </div>
 
           {/* Services Column 1 */}
@@ -26,15 +29,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
-                  className="text-gray-500 hover:text-black transition duration-200"
-                >
-                  Facials
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/service/dermaplaning"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Dermaplaning
@@ -42,13 +37,22 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/service/biorepeel"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   BioRePeel
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/service/microneedling"
+                  className="text-gray-500 hover:text-black transition duration-200"
+                >
+                  Microneedling
+                </Link>
+              </li>
             </ul>
+            
           </div>
 
           {/* Services Column 2 */}
@@ -57,15 +61,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
-                  className="text-gray-500 hover:text-black transition duration-200"
-                >
-                  Microneedling
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#"
+                  href="/service/mesotherapy"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Mesotherapy
@@ -73,7 +69,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/service/profhilo"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Profhilo
@@ -96,7 +92,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/contact"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Contact Us
@@ -104,7 +100,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="/about"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   About

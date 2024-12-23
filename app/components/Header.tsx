@@ -1,7 +1,11 @@
+'use client';
 import Link from "next/link";
 import { ChevronDownIcon } from "@heroicons/react/solid";
+import { useState } from "react";
 
 export default function Header() {
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
   return (
     <header className="flex items-center justify-between px-20 py-4 shadow-md">
       {/* Logo */}
@@ -17,66 +21,72 @@ export default function Header() {
 
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-8 ml-auto mr-8">
-        <a
-          href="#"
+        <Link
+          href="/"
           className="text-black font-semibold hover:text-gray-900 transition-colors duration-200"
         >
           Home
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          href="/about"
           className="text-black font-semibold hover:text-gray-700 transition-colors duration-200"
         >
           About
-        </a>
-        <div className="relative group">
-          <a
-            href="#"
+        </Link>
+        {/* Dropdown Menu */}
+        <div
+          className="relative"
+          onMouseEnter={() => setDropdownOpen(true)}
+          onMouseLeave={() => setDropdownOpen(false)}
+        >
+          <Link
+            href="/services"
             className="flex items-center text-black font-semibold hover:text-gray-700"
           >
             Services
             <ChevronDownIcon className="h-4 w-4 ml-1" />
-          </a>
-          {/* Dropdown */}
-          <div className="absolute hidden group-hover:block bg-white shadow-md mt-2 rounded-md py-2 w-40">
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              Dermaplaning
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              BioRePeel
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              Microneedling
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              Mesotherapy
-            </a>
-            <a
-              href="#"
-              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-            >
-              Profhilo
-            </a>
-          </div>
+          </Link>
+          {isDropdownOpen && (
+            <div className="absolute left-0 top-full bg-white shadow-md rounded-md py-2 w-40 z-50">
+              <Link
+                href="/service/dermaplaning"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Dermaplaning
+              </Link>
+              <Link
+                href="/service/biorepeel"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                BioRePeel
+              </Link>
+              <Link
+                href="/service/microneedling"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Microneedling
+              </Link>
+              <Link
+                href="/service/mesotherapy"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Mesotherapy
+              </Link>
+              <Link
+                href="/service/profhilo"
+                className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+              >
+                Profhilo
+              </Link>
+            </div>
+          )}
         </div>
-        <a
-          href="#"
+        <Link
+          href="/contact"
           className="text-black font-semibold hover:text-gray-700 transition-colors duration-200"
         >
           Contact Us
-        </a>
+        </Link>
       </nav>
 
       {/* Button */}
@@ -86,5 +96,3 @@ export default function Header() {
     </header>
   );
 }
-
-

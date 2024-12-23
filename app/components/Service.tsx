@@ -9,7 +9,7 @@ interface ServicePageProps {
 
 const Service: React.FC<ServicePageProps> = ({ title, description, additionalInfo, image }) => {
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="bg-white w-full mx-auto px-6 py-16 mt-0">
       <div className="flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
         {/* Text Content */}
         <div className="md:w-1/2">
