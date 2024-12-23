@@ -43,19 +43,31 @@ export default function Header() {
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Service 1
+              Dermaplaning
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Service 2
+              BioRePeel
             </a>
             <a
               href="#"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
             >
-              Service 3
+              Microneedling
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            >
+              Mesotherapy
+            </a>
+            <a
+              href="#"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+            >
+              Profhilo
             </a>
           </div>
         </div>
