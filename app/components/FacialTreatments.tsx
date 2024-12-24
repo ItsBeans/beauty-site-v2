@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const treatments = [
     {
       title: "Quick Glow Facial",
@@ -77,9 +79,11 @@ const treatments = [
                     <li key={idx}>{highlight}</li>
                   ))}
                 </ul>
-                <button className="px-6 py-3 text-white font-semibold rounded-md bg-gradient-to-b from-[#C59C5D] to-[#D3B078] hover:opacity-90 transition duration-300">
-                  Book Appointment Now
-                </button>
+                <button className="px-6 py-3 text-white rounded-md bg-gradient-to-b from-[#C59C5D] to-[#D3B078] hover:opacity-90 transition duration-200">
+  <Link href="https://book.squareup.com/appointments/zq6ezov0waavbb/location/L13XT9086KZBG/services">
+    Book Appointment Now
+  </Link>
+</button>
               </div>
             </div>
           ))}

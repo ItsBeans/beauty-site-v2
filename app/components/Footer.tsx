@@ -84,7 +84,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="#"
+                  href="https://book.squareup.com/appointments/zq6ezov0waavbb/location/L13XT9086KZBG/services"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Book Appointment

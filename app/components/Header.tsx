@@ -91,8 +91,10 @@ export default function Header() {
 
       {/* Button */}
       <button className="px-6 py-3 text-white rounded-md bg-gradient-to-b from-[#C59C5D] to-[#D3B078] hover:opacity-90 transition duration-200">
-        Book Now
-      </button>
+  <Link href="https://book.squareup.com/appointments/zq6ezov0waavbb/location/L13XT9086KZBG/services">
+    Book Now
+  </Link>
+</button>
     </header>
   );
 }
