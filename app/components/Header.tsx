@@ -23,13 +23,13 @@ export default function Header() {
       <nav className="hidden md:flex space-x-8 ml-auto mr-8">
         <Link
           href="/"
-          className="text-black font-semibold hover:text-gray-900 transition-colors duration-200"
+          className="text-black hover:text-gray-900 transition-colors duration-200"
         >
           Home
         </Link>
         <Link
           href="/about"
-          className="text-black font-semibold hover:text-gray-700 transition-colors duration-200"
+          className="text-black hover:text-gray-700 transition-colors duration-200"
         >
           About
         </Link>
@@ -41,7 +41,7 @@ export default function Header() {
         >
           <Link
             href="/services"
-            className="flex items-center text-black font-semibold hover:text-gray-700"
+            className="flex items-center text-black hover:text-gray-700"
           >
             Services
             <ChevronDownIcon className="h-4 w-4 ml-1" />
@@ -83,7 +83,7 @@ export default function Header() {
         </div>
         <Link
           href="/contact"
-          className="text-black font-semibold hover:text-gray-700 transition-colors duration-200"
+          className="text-black hover:text-gray-700 transition-colors duration-200"
         >
           Contact Us
         </Link>
