@@ -1,12 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 
 const services = [
-  { title: 'Facials', description: 'Relax and rejuvenate with glowing, deep-cleansing treatments.', icon: '/icons/SVG/Facials.svg' },
-  { title: 'Dermaplaning', description: 'Smooth away dead skin and fine hair for a flawless look.', icon: '/icons/SVG/Dermaplaning.svg' },
-  { title: 'BioRePeel', description: 'Brighten and refresh your skin with no downtime.', icon: '/icons/SVG/BioRePeel.svg' },
-  { title: 'Microneedling', description: 'Boost collagen and improve texture for youthful, radiant skin.', icon: '/icons/SVG/Microneeling.svg' },
-  { title: 'Mesotherapy', description: 'Nourish your skin with a powerful infusion of vitamins and nutrients.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' },
-  { title: 'Profhilo', description: 'Hydrate, lift, and refresh with the ultimate skin booster.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' },
+  { title: 'Dermaplaning', description: 'Smooth away dead skin and fine hair for a flawless look.', icon: '/icons/SVG/Dermaplaning.svg' ,page:'/service/dermaplaning'},
+  { title: 'BioRePeel', description: 'Brighten and refresh your skin with no downtime.', icon: '/icons/SVG/BioRePeel.svg',page:'/service/biorepeel' },
+  { title: 'Microneedling', description: 'Boost collagen and improve texture for youthful, radiant skin.', icon: '/icons/SVG/Microneeling.svg' ,page:'/service/microneedling'},
+  { title: 'Mesotherapy', description: 'Nourish your skin with a powerful infusion of vitamins and nutrients.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/service/mesotherapy'},
+  { title: 'Profhilo', description: 'Hydrate, lift, and refresh with the ultimate skin booster.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/service/profhilo' },
 ];
 
 const ServiceCard: React.FC = () => {
@@ -42,12 +42,12 @@ const ServiceCard: React.FC = () => {
               {/* Service Description */}
               <p className="text-gray-600 text-sm mb-4 leading-relaxed">{service.description}</p>
               {/* Read More Link */}
-              <a
-                href="#"
+              <Link
+                href={service.page}
                 className="text-gray-600 hover:underline"
               >
                 Read More &gt;
-              </a>
+              </Link>
             </div>
           ))}
         </div>
