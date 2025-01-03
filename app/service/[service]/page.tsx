@@ -75,9 +75,3 @@ export default async function ServicePageDynamic({
   );
 }
 
-export async function generateStaticParams() {
-  // Generate static params for pre-rendering
-  return Object.keys(serviceDetails).map((service) => ({
-    service,
-  }));
-}
