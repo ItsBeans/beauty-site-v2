@@ -46,20 +46,18 @@ const serviceDetails = {
   },
 };
 
-export default async function ServicePageDynamic({
+export default function ServicePageDynamic({
   params,
 }: {
   params: { service: string };
 }) {
-  // Await params explicitly
-  const { service } = await Promise.resolve(params);
+  const serviceKey = params.service;
 
-  if (!service || !(service in serviceDetails)) {
-    notFound(); // Handle 404 for invalid service names
-    return null;
+  if (!serviceKey || !(serviceKey in serviceDetails)) {
+    notFound(); // Render a 404 page for invalid service keys
   }
 
-  const details = serviceDetails[service as keyof typeof serviceDetails];
+  const details = serviceDetails[serviceKey as keyof typeof serviceDetails];
 
   return (
     <>
@@ -75,3 +73,8 @@ export default async function ServicePageDynamic({
   );
 }
 
+export async function generateStaticParams() {
+  return Object.keys(serviceDetails).map((service) => ({
+    service,
+  }));
+}
