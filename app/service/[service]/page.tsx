@@ -44,26 +44,36 @@ const serviceDetails = {
       "Over time, Profhilo visibly improves skin elasticity and smoothness, making it ideal for ageing skin, fine lines, and dehydration.",
     image: "/images/all/web/Profhilo.jpg",
   },
-  // Add more services here...
 };
 
-export default function ServicePageDynamic({ params }: { params: { service: string } }) {
+export default function ServicePageDynamic({
+  params,
+}: {
+  params: { service: string };
+}) {
   const details = serviceDetails[params.service as keyof typeof serviceDetails];
 
   if (!details) {
-    notFound(); // Handle 404 for invalid service names
+    return notFound(); // Ensure 404 is handled for invalid service names
   }
 
   return (
     <>
-    <Header/>
-    <Service
-      title={details.title}
-      description={details.description}
-      additionalInfo={details.additionalInfo}
-      image={details.image}
-    />
-    <Footer/>
+      <Header />
+      <Service
+        title={details.title}
+        description={details.description}
+        additionalInfo={details.additionalInfo}
+        image={details.image}
+      />
+      <Footer />
     </>
   );
+}
+
+// Predefine all possible service routes
+export async function generateStaticParams() {
+  return Object.keys(serviceDetails).map((service) => ({
+    service,
+  }));
 }
