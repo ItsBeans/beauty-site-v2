@@ -5,7 +5,7 @@ const ContactForm: React.FC = () => {
     <div className="max-w-4xl mx-auto px-6 py-16">
       <h2 className="text-4xl text-center mb-4">Contact Form</h2>
       <p className="text-center text-gray-600 mb-8">
-        If you prefer, fill out the form below, and we’ll respond to your inquiry as soon as possible:
+        If you prefer, fill out the form below, and we&apos;ll respond to your inquiry as soon as possible:
       </p>
       <form
         action="https://formsubmit.co/bennyrocys@gmail.com"

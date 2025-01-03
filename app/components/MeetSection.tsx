@@ -8,7 +8,7 @@ export default function MeetSection() {
             Meet the Face <br /> Behind the Glow
           </h2>
           <p className="text-gray-600 mb-6">
-            Rigoleta’s passion for skincare started in her teenage years and has grown into a fulfilling career as a trusted beauty therapist.
+            Rigoleta&apos;s passion for skincare started in her teenage years and has grown into a fulfilling career as a trusted beauty therapist.
           </p>
           <p className="text-gray-600 mb-8">
             Combining years of experience with a genuine love for helping clients, she specialises in personalised facial treatments designed to enhance natural beauty and boost confidence.

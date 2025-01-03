@@ -11,7 +11,7 @@ export default function ContactSection() {
             <p className="text-gray-600 mb-6">
             Have questions about our services? Need help choosing the 
 perfect treatment for your skin? Or ready to book your next 
-session? Whatever you need, we’re here to assist you every step of 
+session? Whatever you need, we&apos;re here to assist you every step of 
 the way.
             </p>
             <button className="bg-gradient-to-b from-[#C59C5D] to-[#D3B078] text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 transition duration-300">

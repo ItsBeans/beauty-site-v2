@@ -20,7 +20,7 @@ const ServiceCard: React.FC = () => {
         {/* Section Title */}
         <h2 className="text-4xl font-bold text-center text-white mb-4">Your Skin, Our Passion</h2>
         <p className="text-center text-white mb-12 max-w-2xl mx-auto">
-          Whether you’re seeking a quick pick-me-up or advanced rejuvenation treatments, we’ve got you covered. Each service is tailored
+          Whether you&apos;re seeking a quick pick-me-up or advanced rejuvenation treatments, we&apos;ve got you covered. Each service is tailored
           to your unique needs, combining science, nature, and the art of skincare for beautiful, lasting results.
         </p>
 

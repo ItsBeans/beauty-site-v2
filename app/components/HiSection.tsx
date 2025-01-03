@@ -54,7 +54,7 @@ export default function HiSection() {
               </h3>
               <p className="text-gray-600 leading-relaxed">
                 What sets my work apart is the deep connection I build with my clients. I take pride in
-                earning your trust, listening to your skin concerns – whether it’s acne, pigmentation,
+                earning your trust, listening to your skin concerns – whether it&apos;s acne, pigmentation,
                 or fine lines – and tailoring treatments to meet your goals. Nothing brings me more joy
                 than seeing visible results and the renewed confidence they bring. I work with natural,
                 organic products and advanced skin boosters to deliver treatments that not only enhance

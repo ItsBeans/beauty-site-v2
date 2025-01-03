@@ -13,7 +13,7 @@ export default function CallToAction() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
           {/* Title */}
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Let’s Start Your Skincare Journey
+            Let&apos;s Start Your Skincare Journey
           </h2>
           {/* Subtitle */}
           <p className="text-lg text-white mb-8">

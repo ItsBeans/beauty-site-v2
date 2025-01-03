@@ -11,7 +11,7 @@ export default function AboutSection() {
           With a lifelong dream of making people feel beautiful and confident, Rigoleta brings expertise, care, and a personalised touch to every treatment. Her journey from a teenage skincare enthusiast to a professional beauty therapist is a story of passion, dedication, and the joy of helping others.
           </p>
           <button className="bg-gradient-to-b from-[#C59C5D] to-[#D3B078] text-white px-6 py-3 rounded-md font-semibold hover:opacity-90 transition duration-300">
-            Read Rigoleta's Story
+            Read Rigoleta&apos;s Story
           </button>
         </div>
 

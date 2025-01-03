@@ -10,7 +10,7 @@ export default function ServiceIntroSection() {
             Discover the <br /> perfect facial for<br /> your skin.
           </h1>
           <p className="text-gray-700 text-lg mb-6">
-          From a quick radiance boost to deep cleansing and relaxation, our facials are tailored to meet your skin’s unique needs. Let us rejuvenate your skin and leave you feeling refreshed and confident.
+          From a quick radiance boost to deep cleansing and relaxation, our facials are tailored to meet your skin&apos;s unique needs. Let us rejuvenate your skin and leave you feeling refreshed and confident.
           </p>
           <Link
             href="#"
