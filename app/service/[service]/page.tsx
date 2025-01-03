@@ -7,9 +7,9 @@ const serviceDetails = {
   dermaplaning: {
     title: "Dermaplaning",
     description:
-      "Dermaplaning is a non-invasive skincare treatment that uses a fine blade to gently exfoliate dead skin cells and vellus hair,commonly known as peach fuzz. This painless procedure removes impurities, leaving your skin noticeably smoother with an instantglow and no downtime.  ",
+      "Dermaplaning is a non-invasive skincare treatment that uses a fine blade to gently exfoliate dead skin cells and vellus hair,commonly known as peach fuzz. This painless procedure removes impurities, leaving your skin noticeably smoother with an instantglow and no downtime.",
     additionalInfo:
-      "Beyond enhancing your skin’s natural radiance, dermaplaning also  improves the absorption of skincare products, allowing them to penetrate more deeply and deliver enhanced benefits for a more effective routine.",
+      "Beyond enhancing your skin’s natural radiance, dermaplaning also improves the absorption of skincare products, allowing them to penetrate more deeply and deliver enhanced benefits for a more effective routine.",
     image: "/images/all/web/Dermaplaning.jpg",
   },
   biorepeel: {
@@ -23,7 +23,7 @@ const serviceDetails = {
   microneedling: {
     title: "Microneedling",
     description:
-      "Microneedling stimulates your skin’s natural healing process by creating tiny micro-injuries that encourage collagen and elastin production. This minimally invasive treatment enhances skin texture, improves elasticity, and reduces the appearance of scars and fine lines. ",
+      "Microneedling stimulates your skin’s natural healing process by creating tiny micro-injuries that encourage collagen and elastin production. This minimally invasive treatment enhances skin texture, improves elasticity, and reduces the appearance of scars and fine lines.",
     additionalInfo:
       "With minimal discomfort and short recovery time, microneedling helps hydrate your skin and refine its tone, leaving it looking youthful and vibrant.",
     image: "/images/all/web/Microneedling.jpg",
@@ -31,7 +31,7 @@ const serviceDetails = {
   mesotherapy: {
     title: "Mesotherapy",
     description:
-      "Mesotherapy is a minimally invasive treatment that injects a customised blend of vitamins, antioxidants, and nutrients directly into your skin layers. This revitalising procedure enhances hydration, improves elasticity, and boosts skin firmness while restoring your natural glow. ",
+      "Mesotherapy is a minimally invasive treatment that injects a customised blend of vitamins, antioxidants, and nutrients directly into your skin layers. This revitalising procedure enhances hydration, improves elasticity, and boosts skin firmness while restoring your natural glow.",
     additionalInfo:
       "Perfect for dull, tired skin or fine lines, mesotherapy delivers noticeable results for a healthier, radiant complexion.",
     image: "/images/all/web/Mesotherapy.jpg",
@@ -39,22 +39,24 @@ const serviceDetails = {
   profhilo: {
     title: "Profhilo",
     description:
-      "Profhilo is an advanced skin booster designed to deeply hydrate, lift, and rejuvenate your skin. By stimulating collagen and elastin production, this quick and virtually painless treatment delivers long-lasting hydration and plumping effects. ",
+      "Profhilo is an advanced skin booster designed to deeply hydrate, lift, and rejuvenate your skin. By stimulating collagen and elastin production, this quick and virtually painless treatment delivers long-lasting hydration and plumping effects.",
     additionalInfo:
       "Over time, Profhilo visibly improves skin elasticity and smoothness, making it ideal for ageing skin, fine lines, and dehydration.",
     image: "/images/all/web/Profhilo.jpg",
   },
 };
 
-export default function ServicePageDynamic({
+export default async function ServicePageDynamic({
   params,
 }: {
   params: { service: string };
 }) {
   const details = serviceDetails[params.service as keyof typeof serviceDetails];
 
+  // Await params to ensure they are loaded
   if (!details) {
-    return notFound(); // Ensure 404 is handled for invalid service names
+    notFound(); // Handle 404 for invalid service names
+    return null;
   }
 
   return (
@@ -71,7 +73,6 @@ export default function ServicePageDynamic({
   );
 }
 
-// Predefine all possible service routes
 export async function generateStaticParams() {
   return Object.keys(serviceDetails).map((service) => ({
     service,
