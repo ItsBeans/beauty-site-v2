@@ -13,7 +13,7 @@ const ContactForm: React.FC = () => {
         className="space-y-6"
       >
         <input type="hidden" name="_captcha" value="false" /> {/* Disable CAPTCHA */}
-        <input type="hidden" name="_next" value="http://localhost:3000/thankyou" /> {/* Redirect URL */}
+        <input type="hidden" name="_next" value="http://rigoletabeauty.com/thankyou" /> {/* Redirect URL */}
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Name Input */}
