@@ -1,6 +1,6 @@
 'use client';
 import Link from "next/link";
-import { ChevronDownIcon, MenuIcon, XIcon } from "@heroicons/react/solid";
+import { ChevronDownIcon, Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 
 export default function Header() {
@@ -24,9 +24,9 @@ export default function Header() {
       <div className="md:hidden">
         <button onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}>
           {isMobileMenuOpen ? (
-            <XIcon className="h-6 w-6 text-black" />
+            <XMarkIcon className="h-6 w-6 text-black" />
           ) : (
-            <MenuIcon className="h-6 w-6 text-black" />
+            <Bars3Icon className="h-6 w-6 text-black" />
           )}
         </button>
       </div>
