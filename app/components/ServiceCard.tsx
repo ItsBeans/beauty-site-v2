@@ -2,11 +2,11 @@ import Link from 'next/link';
 import React from 'react';
 
 const services = [
-  { title: 'Dermaplaning', description: 'Smooth away dead skin and fine hair for a flawless look.', icon: '/icons/SVG/Dermaplaning.svg' ,page:'/service/dermaplaning'},
-  { title: 'BioRePeel', description: 'Brighten and refresh your skin with no downtime.', icon: '/icons/SVG/BioRePeel.svg',page:'/service/biorepeel' },
-  { title: 'Microneedling', description: 'Boost collagen and improve texture for youthful, radiant skin.', icon: '/icons/SVG/Microneeling.svg' ,page:'/service/microneedling'},
-  { title: 'Mesotherapy', description: 'Nourish your skin with a powerful infusion of vitamins and nutrients.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/service/mesotherapy'},
-  { title: 'Profhilo', description: 'Hydrate, lift, and refresh with the ultimate skin booster.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/service/profhilo' },
+  { title: 'Dermaplaning', description: 'Smooth away dead skin and fine hair for a flawless look.', icon: '/icons/SVG/Dermaplaning.svg' ,page:'/dermaplaning'},
+  { title: 'BioRePeel', description: 'Brighten and refresh your skin with no downtime.', icon: '/icons/SVG/BioRePeel.svg',page:'/biorepeel' },
+  { title: 'Microneedling', description: 'Boost collagen and improve texture for youthful, radiant skin.', icon: '/icons/SVG/Microneeling.svg' ,page:'/microneedling'},
+  { title: 'Mesotherapy', description: 'Nourish your skin with a powerful infusion of vitamins and nutrients.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/mesotherapy'},
+  { title: 'Profhilo', description: 'Hydrate, lift, and refresh with the ultimate skin booster.', icon: '/icons/SVG/Profhilo-Mesotherapy.svg' ,page:'/profhilo' },
 ];
 
 const ServiceCard: React.FC = () => {

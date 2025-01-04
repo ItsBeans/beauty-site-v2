@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/service/dermaplaning"
+                  href="/dermaplaning"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Dermaplaning
@@ -37,7 +37,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/service/biorepeel"
+                  href="/biorepeel"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   BioRePeel
@@ -45,7 +45,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/service/microneedling"
+                  href="/microneedling"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Microneedling
@@ -60,7 +60,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link
-                  href="/service/mesotherapy"
+                  href="/mesotherapy"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Mesotherapy
@@ -68,7 +68,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="/service/profhilo"
+                  href="/profhilo"
                   className="text-gray-500 hover:text-black transition duration-200"
                 >
                   Profhilo

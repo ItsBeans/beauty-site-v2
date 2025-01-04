@@ -61,31 +61,31 @@ export default function Header() {
           {isDropdownOpen && (
             <div className="absolute left-0 top-full bg-white shadow-md rounded-md py-2 w-40 z-50">
               <Link
-                href="/service/dermaplaning"
+                href="/dermaplaning"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Dermaplaning
               </Link>
               <Link
-                href="/service/biorepeel"
+                href="/biorepeel"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 BioRePeel
               </Link>
               <Link
-                href="/service/microneedling"
+                href="/microneedling"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Microneedling
               </Link>
               <Link
-                href="/service/mesotherapy"
+                href="/mesotherapy"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Mesotherapy
               </Link>
               <Link
-                href="/service/profhilo"
+                href="/profhilo"
                 className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
               >
                 Profhilo
