@@ -137,28 +137,28 @@ export default function Header() {
                     Dermaplaning
                   </Link>
                   <Link
-                    href="/service/biorepeel"
+                    href="/biorepeel"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     BioRePeel
                   </Link>
                   <Link
-                    href="/service/microneedling"
+                    href="/microneedling"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Microneedling
                   </Link>
                   <Link
-                    href="/service/mesotherapy"
+                    href="/mesotherapy"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Mesotherapy
                   </Link>
                   <Link
-                    href="/service/profhilo"
+                    href="/profhilo"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                   >
