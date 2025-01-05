@@ -29,14 +29,7 @@ export default function MeetSection() {
             />
           </div>
 
-          {/* Overlapping Smaller Image */}
-          <div className="absolute bottom-4 left-10 sm:bottom-6 sm:left-8 md:bottom-8 md:left-6 lg:bottom-10 lg:left-8 w-[40%] sm:w-[35%] rounded-2xl overflow-hidden shadow-md">
-            <img
-              src="/images/about/web/Hero.jpg"
-              alt="Facial Treatment"
-              className="w-full h-auto object-cover"
-            />
-          </div>
+          
         </div>
       </div>
     </section>
