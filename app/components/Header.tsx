@@ -130,7 +130,7 @@ export default function Header() {
               {isDropdownOpen && (
                 <div className="mt-2 bg-white shadow-md rounded-md py-2 w-full">
                   <Link
-                    href="/service/dermaplaning"
+                    href="/dermaplaning"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                     onClick={() => setMobileMenuOpen(false)}
                   >
